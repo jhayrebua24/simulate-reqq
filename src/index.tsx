@@ -1,14 +1,12 @@
-import React from "react";
+import * as R from "react";
 
 import ReactDOM from "react-dom";
-
-import "assets/styles/styles.css";
 
 import App from "./App";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <R.StrictMode>
     <App />
-  </React.StrictMode>,
+  </R.StrictMode>,
   document.getElementById("root")
 );

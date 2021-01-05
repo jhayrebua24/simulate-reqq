@@ -6,10 +6,12 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
+    "@types/faker": "^5.1.5",
     "@types/jest": "^26.0.19",
     "@types/node": "^12.19.11",
     "@types/react": "^16.14.2",
     "@types/react-dom": "^16.9.10",
+    "faker": "^5.1.0",
     "npm-run-all": "^4.1.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -18,10 +20,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "build:css": "NODE_ENV=production  postcss src/assets/tailwind/tailwind.css -o src/assets/styles/styles.css",
-    "watch:css": "postcss -w src/assets/tailwind/tailwind.css -o src/assets/styles/styles.css",
-    "start": "npm-run-all -p watch:css start:react",
-    "build": "npm-run-all -s build:style build:react",
+    "start": "npm-run-all -p start:react",
+    "build": "npm-run-all -s build:react",
     "start:react": "react-scripts start",
     "build:react": "react-scripts build",
     "test": "react-scripts test",
@@ -76,11 +76,6 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^4.3.6",
     "lint-staged": "^10.5.3",
-    "postcss": "^7.0.35",
-    "postcss-cli": "^7.1.2",
-    "postcss-import": "^12.0.1",
-    "postcss-nested": "^4.2.3",
-    "prettier": "^2.2.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
+    "prettier": "^2.2.1"
   }
 }
