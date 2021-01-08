@@ -14,7 +14,7 @@ export interface ISuccessData {
 
 export interface Props {
   onSuccess: (res?: ISuccessData) => void;
-  key?: string;
+  key: string;
 }
 
 export interface Params extends Props {
